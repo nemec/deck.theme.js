@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<!-- Slide Metadata -->
+	<title>Sample Theming Presentation</title>
+	
+	<meta name="description" content="" />
+	<meta name="author" content="Dan Nemec" />
+	<link rel="external" href="http://github.com/nemec/deck.slidetheme.js" />
+	<meta name="viewport" content="width=1024, user-scalable=no" />
+	<!-- End Slide Metadata -->
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="core/deck.core.css" />
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css" />
+	<link rel="stylesheet" href="extensions/status/deck.status.css" />
+	<link rel="stylesheet" href="extensions/theme/deck.theme.css" />
+	
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="themes/style/title.css" />
+	<link rel="stylesheet" href="themes/style/slide.css" />
+	<link rel="stylesheet" href="themes/style/final.css" />
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/fade.css" />
+	
+	<script src="modernizr.custom.js"></script>
+	<script src="jquery-1.7.2.min.js"></script>
+</head>
+
+<body class="deck-container theme-title">
+
+
+<!-- Begin slides -->
+<section class="slide" id="title-slide">
+	<h1>Sample Title Slide</h1>
+</section>
+
+<section class="slide" data-theme="theme-slide">
+	<h2>Second slide</h2>
+	<p>This slide has a different theme than the first. Notice the smooth transition.</p>
+	<p>
+		All it takes is adding a separate <code>data-theme</code>
+		attribute to the slide with the desired theme name.
+	</p>
+</section>
+
+<section class="slide" data-theme="theme-title">
+	<h2>Back to the title theme.</h2>
+	<p>
+		Hit the left arrow to go back to the previous slide.
+		Notice how the transitions even work in reverse?
+	</p>
+</section>
+
+<section class="slide" data-theme="theme-final">
+	<h2>Finally, a third theme.</h2>
+	<p>
+		It's just okay.
+	</p>
+</section>
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- Deck Core and extensions -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/theme/deck.theme.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>

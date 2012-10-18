@@ -1,0 +1,10 @@
+﻿.deck-container {
+    -webkit-transition:
+      color 0.25s linear,
+      background-color 0.25s linear,
+      border-color 0.25s linear;
+    transition:
+      color 0.25s linear,
+      background-color 0.25s linear,
+      border-color 0.25s linear;
+}
